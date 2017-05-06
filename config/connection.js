@@ -1,11 +1,10 @@
 // Set up MySQL connection.
 var mysql = require("mysql");
 
-
+/*
 var keys = require("./keys.js");
 console.log(keys.sqlKeys.host);
 
-/*
 var connection = mysql.createConnection({
   host: keys.sqlKeys.host,
   user: keys.sqlKeys.user,
