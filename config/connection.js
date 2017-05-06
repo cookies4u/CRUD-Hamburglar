@@ -1,8 +1,11 @@
 // Set up MySQL connection.
 var mysql = require("mysql");
 
+
 var keys = require("./keys.js");
 console.log(keys.sqlKeys.host);
+
+/*
 var connection = mysql.createConnection({
   host: keys.sqlKeys.host,
   user: keys.sqlKeys.user,
@@ -10,6 +13,21 @@ var connection = mysql.createConnection({
   database: "burgers_db",
   port: keys.sqlKeys.port
 });
+*/
+
+var connection;
+
+if (process.env.JAWSDB_URL) {
+  connection = mysql.createConnection(process.env.JAWSDB_URL);
+} else {
+  connection = mysql.createConnection({
+    host: keys.sqlKeys.host,
+    user: keys.sqlKeys.user,
+    password: keys.sqlKeys.password,
+    database: "burgers_db",
+    port: keys.sqlKeys.port    
+  });
+}
 
 // Make connection.
 connection.connect(function(err) {
