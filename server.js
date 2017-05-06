@@ -3,7 +3,7 @@ var bodyParser = require("body-parser");
 var methodOverride = require("method-override");
 
 //var port = 3000;
-var port = process.env.PORT || 8080; // trying this for heroku
+var port = process.env.PORT || 3000; // trying this for heroku
 
 var app = express();
 

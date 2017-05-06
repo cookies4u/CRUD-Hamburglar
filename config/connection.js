@@ -25,7 +25,8 @@ if (process.env.JAWSDB_URL) {
     user: keys.sqlKeys.user,
     password: keys.sqlKeys.password,
     database: "burgers_db",
-    port: keys.sqlKeys.port    
+    port: keys.sqlKeys.port,
+    maxActive: "5"      
   });
 }
 
