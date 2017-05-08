@@ -1,24 +1,11 @@
 {
-  "name": "curd_hamburglar",
+  "name": "crud_hamburglar",
   "version": "1.0.0",
   "description": "CRUD application using NODE, JavaScript, Handlebars, Express, MySQL",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
-  },
-  "author": "Juan C.",
-  "license": "ISC",
-  "dependencies": {
-    "body-parser": "^1.14.2",
-    "express": "^4.13.3",
-    "express-handlebars": "^2.0.1",
-    "method-override": "^2.3.5",
-    "mysql": "^2.10.2"
-  },
-  "devDependencies": {
-    "handlebars-helper-css": "^0.1.0",
-    "nodemon": "^1.11.0"
   },
   "repository": {
     "type": "git",
@@ -31,8 +18,17 @@
     "express",
     "javascript"
   ],
+  "author": "Juan C.",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/cookies4u/CRUD-Hamburglar/issues"
   },
-  "homepage": "https://github.com/cookies4u/CRUD-Hamburglar#readme"
+  "homepage": "https://github.com/cookies4u/CRUD-Hamburglar#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "express-handlebars": "^3.0.0",
+    "method-override": "^2.3.8",
+    "mysql": "^2.13.0"
+  }
 }

@@ -35,7 +35,7 @@ connection.connect(function(err) {
     return;
   }
   console.log("connected as id " + connection.threadId);
-  connection.create()
+  //connection.create();
 });
 
 // Export connection for our ORM to use.
